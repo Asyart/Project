@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(#200016, #10001f);
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    position: fixed;
+    width: 95%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    color: white;
+}
+
+#logo{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+header ul li{
+    margin: 30px;
+    
+}
+
+li .nav-links{
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+li .nav-links:hover, #actv {
+    background-color: white;
+    color: #200016;
+}
+
+.top-container {
+    position: relative;
+    height: 100vh;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    overflow: hidden;
+}
+
+.top-container::after {
+    content: "";
+    position:absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top, #200016, transparent);
+}
+
+.top-container img{
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#moon {
+    mix-blend-mode: screen;
+    transform: translateY(100px);
+}
+
+.adhm {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    transform: translateY(-120px);
+}
+
+.content-container {
+    color: white;
+    padding: 30px;
+}
+
+.content-container h2 {
+    margin: 20px;
+    font-size: 30px;
+}
+
+.content-container p {
+    margin: 20px;
+}
