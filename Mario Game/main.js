@@ -44,10 +44,12 @@ class Platform {
             x,
             y
         }
-console.log(image.width+"helllllo")
-        this.width = 
+       
+        this.width = 200
         this.height = 20
+        
         this.image = image
+        console.log(image.width)
     }
 
     draw() {
